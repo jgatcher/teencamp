@@ -1,4 +1,4 @@
 arcyf_ycamp
 ===========
 
-source for youth camp registration app
+source for teen camp registration app
