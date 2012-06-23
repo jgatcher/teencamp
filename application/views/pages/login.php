@@ -87,7 +87,7 @@
 			</div>
 		</div>
 	</div>
-	<?php include("testimonials.php"); ?>
+	<?php //include("testimonials.php"); ?>
 	
 
 
