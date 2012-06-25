@@ -43,14 +43,17 @@
 					$occupation["school_location"] = $data["school_location"];
 				}
 
+				//check for school status
+				$occupation["schoolStatus"] = $data["schoolStatus"];
+
 				//check for other_school
-				
 				$occupation["educationalLevel"] = $data["educationalLevel"];
 			}
 
 			unset($data["school"]);
 			unset($data["school_location"]);
 			unset($data["educationalLevel"]);
+			unset($data["schoolStatus"]);
 
 			$data["occupation"] = $occupation;
 			$ch = trim($data["church"]);

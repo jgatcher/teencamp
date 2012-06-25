@@ -9,7 +9,7 @@
 			</div> 
 	
 			<div class='instructions'>
-				<h2>Register for Youth Camp in just 3 simple steps.</h2>
+				<h2>Register for Teen Camp in just 3 simple steps.</h2>
 				<h3>Step 3. Fill out the registering form</h3>
 				<ol>
 				  <li class="step1 ">1</li>
@@ -261,8 +261,18 @@
 					<p>
 						<select name='educationalLevel'>
 							<option value='jhs student'> JHS Student</option>
-							<option value='shs'>SHS Student</option>
+							<option value='jhs graduate'> JHS Graduate</option>
+							<option value='shs student'>SHS Student</option>
+							<option value='shs graduate'>SHS Graduate</option>
+							<option value='gces-ib'> GCES/IB</option>
 							<option value='tertiary'>University/Tertiary</option>
+						</select>
+					</p>
+					<label>School Status </label>
+					<p>
+						<select name='schoolStatus'>
+							<option value='boarder'>Boarder</option>
+							<option value='day'>Day Student</option>
 						</select>
 					</p>
 				</div>
@@ -273,11 +283,10 @@
 						<option value='camper'>Camper</option>
 						<option value='committee'>Committee</option>
 						<option value='prayer warrior'>Prayer Warrior</option>
-						<option value='protocol'>Protocol</option>
-						<option value='participant'>Participant</option>
+						<option value='supervisors'>Supervisors</option>
 					</select>
 				</p>
-				<label>Day of Arival</label>
+				<!-- <label>Day of Arival</label>
 				<p>
 					<select name='arrival_day'>
 						<option value='wednesday'>Wednesday</option>
@@ -294,7 +303,7 @@
 						<option value='afternoon'>Afternoon</option>
 						<option value='evenining'>Evening</option>
 					</select>
-				</p>
+				</p> -->
 				
 				<div class="control-group">
 					<label>Emergency Contact (Name)</label>
