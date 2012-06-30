@@ -7,9 +7,9 @@
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="<?php echo base_url(); ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- <link href="<?php echo base_url(); ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>/assets/css/datepicker.css" rel="stylesheet">
-    <link href="<?php echo base_url(); ?>/assets/css/custom.css" rel="stylesheet">
+     --><!-- <link href="<?php echo base_url(); ?>/assets/css/custom.css" rel="stylesheet"> -->
 	<title><?php echo $title ?> </title>
 
 </head>
@@ -29,7 +29,7 @@
 		<div class='span9'>
 
 			<div>
-				<h1>Youth Camp 2012 Registration Details</h1>
+				<h1>Registration Details</h1>
 			</div>
 			<br />
 			<div id='camper_records' class='well'>
@@ -37,7 +37,7 @@
 			    	<tbody>
 			    	<?php 
 			    		
-			    		print_details("First Name", $obj["firstName"]);
+				    	print_details("First Name", $obj["firstName"]);
 			    		print_details("Last Name", $obj["lastName"]);
 			    		print_details("Other Name", $obj["otherName"]);
 			    		print_details("Email", $obj["email"]);
@@ -51,20 +51,46 @@
 			    		print_details("Occupation", $occType);
 			    		if(trim($occType)=="student"){
 			    			print_details("School", $obj["occupation"]["school"]);
+			    			print_details("School Status", $obj["occupation"]["schoolStatus"]);
 			    			print_details("Location of School", $obj["occupation"]["school_location"]);
 			    			print_details("Educational Level", $obj["occupation"]["educationalLevel"]);
 			    		}
 			    		print_details("Role At Camp", $obj["role"]);
-			    		print_details("Day of Arival", $obj["arrival_day"]);
-			    		print_details("Time of Arival", $obj["arrival_time"]);
-			    		print_details("Emergency Contact (Name)", $obj["emergency"]["name"]);
-			    		print_details("Emergency Contact(Number)", $obj["emergency"]["number"]);
-			    		print_details("Registeration Code", $obj["registrationCode"]);
-
+			    		print_details("Father's Name",$obj["parentalInfo"]["fathers_name"]);
+			    		print_details("Father's Cell",$obj["parentalInfo"]["fathers_cell_number"]);
+			    		print_details("Father's Off Number",$obj["parentalInfo"]["fathers_office_number"]);
+			    		print_details("Mothers's Name",$obj["parentalInfo"]["mothers_name"]);
+			    		print_details("Mother's Cell",$obj["parentalInfo"]["mothers_cell_number"]);
+			    		print_details("Mother's Off Number",$obj["parentalInfo"]["mothers_office_number"]);
+		    
 
 			    	?>
 			    	</tbody>
 			</table>
+			</div>
+
+			<div>
+				<p>
+					I ........................................................................................
+					 consent that my Son / Daughter/ Ward 
+					..........................................................................................
+					 can attend Teen Camp 2012 being held at 
+					Abokobi Presbyterian Women's Centre from the 4th to August 2012. 
+				</p>
+				<p>
+					Signed ............................................................
+				</p>
+				<p>
+					If your child is under medication, possess allegies and any other kind of medical condition, kindly indicate along with instructions  <br>
+					............................................................................................................................................................................<br>............................................................................................................................................................................
+					............................................................................................................................................................................<br>............................................................................................................................................................................
+					............................................................................................................................................................................<br>............................................................................................................................................................................
+					............................................................................................................................................................................<br>............................................................................................................................................................................
+				</p>
+				<p>
+					Telephone Number your would like us to call in case of emergency <br>
+					....................................................................
+				</p>
 			</div>
 	</div>
 	</div>

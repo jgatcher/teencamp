@@ -72,15 +72,25 @@
 			
 			$data["church"] = $church;
 
-			$emergency  = array(
-				"name" => $data["emergency_contact"],
-				"number" => $data["emergency_contact_num"]
+			$parental_info  = array(
+				"fathers_name" => $data["fathers_name"],
+				"fathers_cell_number" => $data["fathers_cell_number"],
+				"fathers_office_number" => $data["fathers_office_number"],
+				
+				"mothers_name" => $data["mothers_name"],
+				"mothers_cell_number" => $data["mothers_cell_number"],
+				"mothers_office_number" => $data["mothers_office_number"]
 			);
 
 
-			unset($data["emergency_contact"]);
-			unset($data["emergency_contact_num"]);
-			$data["emergency"] = $emergency;
+			unset($data["fathers_name"]);
+			unset($data["fathers_cell_number"]);
+			unset($data["fathers_office_number"]);
+			unset($data["mothers_name"]);
+			unset($data["mothers_cell_number"]);
+			unset($data["mothers_office_number"]);
+			$data["parentalInfo"] = $parental_info;
+
 			
 			$data["dateOfBirth"]  = $data["year"]."-". $data["month"] .'-' . $data["day"];
 

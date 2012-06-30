@@ -1,4 +1,4 @@
-<div class='row'>
+<div class='row custom'>
 <div class="logout span9">
 		<a href="<?php echo site_url('home/logout') ?>">Logout</a>
 	</div> 
@@ -20,7 +20,8 @@
 		?>
 		<div class="alert alert-success span10">
 			<p>
-				You can now make payments<br/> Thanks for registering for Youth Camp 2012. Can't wait to see you there. Till then, keep your fire burning.
+				Please Print Your details and have at least one parent (guardian) to give  his/her consent by signing the form. 
+				Please note that without a consent from a guardian you will not be allowed to make payment.		
 			</p>
 		</div>
 		<div class='span10 '>
@@ -48,15 +49,19 @@
 		    		print_details("Occupation", $occType);
 		    		if(trim($occType)=="student"){
 		    			print_details("School", $obj["occupation"]["school"]);
+		    			print_details("School Status", $obj["occupation"]["schoolStatus"]);
 		    			print_details("Location of School", $obj["occupation"]["school_location"]);
 		    			print_details("Educational Level", $obj["occupation"]["educationalLevel"]);
 		    		}
 		    		print_details("Role At Camp", $obj["role"]);
-		    		print_details("Day of Arival", $obj["arrival_day"]);
-		    		print_details("Time of Arival", $obj["arrival_time"]);
-		    		print_details("Emergency Contact (Name)", $obj["emergency"]["name"]);
-		    		print_details("Emergency Contact(Number)", $obj["emergency"]["number"]);
-		    		print_details("Registeration Code", $obj["registrationCode"]);
+		    		print_details("Father's Name",$obj["parentalInfo"]["fathers_name"]);
+		    		print_details("Father's Cell",$obj["parentalInfo"]["fathers_cell_number"]);
+		    		print_details("Father's Off Number",$obj["parentalInfo"]["fathers_office_number"]);
+		    		print_details("Mothers's Name",$obj["parentalInfo"]["mothers_name"]);
+		    		print_details("Mother's Cell",$obj["parentalInfo"]["mothers_cell_number"]);
+		    		print_details("Mother's Off Number",$obj["parentalInfo"]["mothers_office_number"]);
+		    
+		    		//print_details("Registeration Code", $obj["registrationCode"]);
 
 
 		    	?>
