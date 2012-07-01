@@ -1,17 +1,18 @@
 body {
 	/*background: url(../images/content-area-bg.png);*/
-	background: url(../images/background.jpg);
+	/*background: url(../images/bg.jpg);*/
 	padding-top: 60px !important;
 }
 
 .stuff {
-	background-color : #111;
+	/*background-color : #111;
 	border-radius: 3px;
-	background-color: rgba(0, 0, 0, .2) !important;
+	/*background-color: rgba(0, 0, 0, .5) !important;*/
+	/*background:  #e0ceca;
 	box-shadow: inset 0 1px 2px rgba(0,0,0,.6) , 0 0 2px rgba(255,255,255,.2) !important;
 	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.6) , 0 0 2px rgba(255,255,255,.2) !important;
 	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.6) , 0 0 2px rgba(255,255,255,.2) !important;
-
+*/
 	/*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; 
 	filter: alpha(opacity=90);*/	
 }
@@ -95,19 +96,19 @@ body {
 }
 
 .instructions ol li.selected { 
-	background: #F54DBE;
+	background: #823519;
 	border: 0px none currentColor;
 	color: #FFFFFF;
 }
 
 .instructions h2, h3 , .testimonials h2{
-	color : #F54DBE;
+	color : #823519;
 	margin-bottom : 20px;
 	font-weight : normal;
 }
 
 .instructions  h3 { 
-	color : #ffe98b;
+	color : #FF5615;
 }
 
 .form_links{
