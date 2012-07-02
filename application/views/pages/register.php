@@ -9,7 +9,7 @@
 			</div> 
 	
 			<div class='instructions'>
-				<h2>Register for Youth Camp in just 3 simple steps.</h2>
+				<h2>Register for Teen Camp in just 3 simple steps.</h2>
 				<h3>Step 3. Fill out the registering form</h3>
 				<ol>
 				  <li class="step1 ">1</li>
@@ -23,7 +23,7 @@
 		</div>
 	<?php 
 		
-		$attributes = array('class' => 'well span8', 'id'=>'registerForm');
+		$attributes = array('class' => 'well span10', 'id'=>'registerForm');
 		echo form_open('registeration/register_camper', $attributes);
  	?>
 		<div class="row">
@@ -140,8 +140,11 @@
 						<input type='text' name='phoneNumber' id='phoneNumber'>
 					</p>
 				</div>
+
+
+
 	  		</div>
-	  		<div class="span4">
+	  		<div class="span3">
 
 	  			<label>Occupation</label>
 				<p>
@@ -261,8 +264,18 @@
 					<p>
 						<select name='educationalLevel'>
 							<option value='jhs student'> JHS Student</option>
-							<option value='shs'>SHS Student</option>
+							<option value='jhs graduate'> JHS Graduate</option>
+							<option value='shs student'>SHS Student</option>
+							<option value='shs graduate'>SHS Graduate</option>
+							<option value='gces-ib'> GCES/IB</option>
 							<option value='tertiary'>University/Tertiary</option>
+						</select>
+					</p>
+					<label>School Status </label>
+					<p>
+						<select name='schoolStatus'>
+							<option value='boarder'>Boarder</option>
+							<option value='day'>Day Student</option>
 						</select>
 					</p>
 				</div>
@@ -273,11 +286,10 @@
 						<option value='camper'>Camper</option>
 						<option value='committee'>Committee</option>
 						<option value='prayer warrior'>Prayer Warrior</option>
-						<option value='protocol'>Protocol</option>
-						<option value='participant'>Participant</option>
+						<option value='supervisors'>Supervisors</option>
 					</select>
 				</p>
-				<label>Day of Arival</label>
+				<!-- <label>Day of Arival</label>
 				<p>
 					<select name='arrival_day'>
 						<option value='wednesday'>Wednesday</option>
@@ -294,23 +306,51 @@
 						<option value='afternoon'>Afternoon</option>
 						<option value='evenining'>Evening</option>
 					</select>
-				</p>
+				</p> -->
 				
-				<div class="control-group">
-					<label>Emergency Contact (Name)</label>
-					<p>
-						<input type='text' name='emergency_contact' id='emergency_contact'>
-					</p>
-	  			</div>
-	  			<div class="control-group">
-	  				<label>Emergency Contact(Number)</label>
-					<p>
-						<input type='text' name='emergency_contact_num' id='emergency_contact_num'>
-					</p>
-	  			</div>
 	  			<div class="control-group">
 
 	  			</div>
+			</div>
+			<div class="span3">
+				<div class="control-group">
+					<label>Father's Name </label>
+					<p>
+						<input type='text' name='fathers_name' id='fathers_name'>
+					</p>
+	  			</div>
+	  			<div class="control-group">
+	  				<label>Father's Cell Number: </label>
+					<p>
+						<input type='text' name='fathers_cell_number' id='fathers_cell_number'>
+					</p>
+	  			</div>
+	  			<div class="control-group">
+	  				<label>Father's Office Number: </label>
+					<p>
+						<input type='text' name='fathers_office_number' id='fathers_office_number'>
+					</p>
+	  			</div>
+	  			
+	  			<div class="control-group">
+					<label>Mother's Name </label>
+					<p>
+						<input type='text' name='mothers_name' id='mothers_name'>
+					</p>
+	  			</div>
+	  			 <div class="control-group">
+	  				<label>Mother's Cell Number: </label>
+					<p>
+						<input type='text' name='mothers_cell_number' id='mothers_cell_number'>
+					</p>
+	  			</div>
+	  			<div class="control-group">
+	  				<label>Mother's Office Number: </label>
+					<p>
+						<input type='text' name='mothers_office_number' id='mothers_office_number'>
+					</p>
+	  			</div> 
+
 			</div>
 		</div>
 		<input type='submit' id='submitBtn' value='Submit' class='btn-primary'>
@@ -359,7 +399,6 @@
 			var otherSchoolLocation = $("#other_school_location");
 			var currentSchoolLocation;
 			$("#school_location").change(function(){
-
 				currentSchoolLocation = $.trim($(this).val()).toLocaleLowerCase();
 				//alert(currentSchoolLocation)
 				if(currentSchoolLocation=="other"){
@@ -381,8 +420,14 @@
 				}
 			}
 
+			function checkParents(){
+				
+			}
+
 			$("#registerForm").submit(function (){
 				clear();
+
+				
 
 				//todo: validation
 				if(!validate("firstName")){
@@ -453,15 +498,86 @@
 					}
 				}
 
-				if(!validate("emergency_contact")){
-					ErrorMsg("Please provide a name for an Emergency Contact");
+				if(!validate("fathers_name") && !validate("mothers_name")){
+					ErrorMsg("Please enter father's and/or mother's name to be used as contact(s)");
 					return false;
 				}
+				clear();
+				var fathersName  = $.trim ($("#fathers_name").val());
+				var mothersName = $.trim($("#mothers_name").val());
+				if(fathersName !== ""){
+					//check for at least one number
+					var fatherCell = $("#fathers_cell_number");
+					var fatherOff = $("#fathers_office_number");
+					var cell = $.trim(fatherCell.val());
+					var off = $.trim(fatherOff.val());
+
+					if(cell === "" && off === ""){
+						ErrorMsg("Please submit at least one number for your father.");
+						fatherCell.parents(".control-group").addClass("error");
+						fatherOff.parents(".control-group").addClass("error");
+						return false;
+					}
+
+					if(cell !== ""){
+						var filter = /^\d{10}$/;
+						if(!validate_fon("fathers_cell_number",filter)){
+							ErrorMsg("Please provide a valid 10 digit number in this format (xxxxxxxxxx) for as your father's cell number");
+							return false;
+						}
+					}
+
+					if(off !== ""){
+						var filter = /^\d{10}$/;
+						if(!validate_fon("fathers_office_number",filter)){
+							ErrorMsg("Please provide a valid 10 digit number in this format (xxxxxxxxxx) for as your father's office number");
+							return false;
+						}
+					}
+				}
+
+				if(mothersName !== ""){
+					//check for at least one number
+
+					var motherCell = $("#mothers_cell_number");
+					var motherOff = $("#mothers_office_number");
+					var cell = $.trim(motherCell.val());
+					var off = $.trim(motherOff.val());
+
+					if(cell === "" && off === ""){
+						ErrorMsg("Please submit at least one number for your mother.");
+						motherCell.parents(".control-group").addClass("error");
+						motherOff.parents(".control-group").addClass("error");
+						return false;
+					}
+
+					if(cell !== ""){
+						var filter = /^\d{10}$/;
+						if(!validate_fon("mothers_cell_number",filter)){
+							ErrorMsg("Please provide a valid 10 digit number in this format (xxxxxxxxxx) for as your mother's cell number");
+							return false;
+						}
+					}
+
+					if(off !== ""){
+						var filter = /^\d{10}$/;
+						if(!validate_fon("mothers_office_number",filter)){
+							ErrorMsg("Please provide a valid 10 digit number in this format (xxxxxxxxxx) for as your mother's office number");
+							return false;
+						}
+					}
+				}
+
+				checkParents();
+				// if(!validate("emergency_contact")){
+				// 	ErrorMsg("Please provide a name for an Emergency Contact");
+				// 	return false;
+				// }
 				
-				if(!validate_fon("emergency_contact_num",filter)){
-					ErrorMsg("Please provide a valid 10 digit phone number for your Emergency Contact");
-					return false;
-				}
+				// if(!validate_fon("emergency_contact_num",filter)){
+				// 	ErrorMsg("Please provide a valid 10 digit phone number for your Emergency Contact");
+				// 	return false;
+				// }
 
 			});
 

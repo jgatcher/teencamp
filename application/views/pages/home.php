@@ -15,7 +15,7 @@
 			$attributes_signup = array('class' => 'custom', 'id'=>'signup_form' );
 		?>
 		
-		<div class="row hero-unit stuff" >
+		<div class="row stuff" >
 			<div class='custom'>
 					<div class='span4 well'>
 						<?php 
@@ -60,7 +60,7 @@
 							    <!-- Carousel items -->
 							    <div class="carousel-inner">
 							    	<div class="active item">
-							    		<img src="<?php echo base_url(); ?>/assets/images/youthcamp.png">
+							    		<img src="<?php echo base_url(); ?>/assets/images/banner.jpg">
 							    	</div>
 							    	<div class="item">
 							    		<img src="<?php echo base_url(); ?>/assets/images/abokobi.jpg">
@@ -71,12 +71,8 @@
 							    	<div class="item">
 							    		<img src="<?php echo base_url(); ?>/assets/images/in_worship.jpg">
 							    	</div>
-							    	<div class="item">
-							    		<img src="<?php echo base_url(); ?>/assets/images/in_worship_again.jpg">
-							    	</div>
-							    	<div class="item">
-							    		<img src="<?php echo base_url(); ?>/assets/images/last.png">
-							    	</div>
+							    	
+							    	
 							    </div>
 							    <!-- Carousel nav -->
 							    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>

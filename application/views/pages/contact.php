@@ -14,8 +14,8 @@
 		    <tbody>
 		    	<tr>
 					<td>Head</td>
-					<td>Babatunde Ampah</td>
-					<td>0264055555</td>
+					<td>Naa Tso Otu-Boateng</td>
+					<td>0242379350</td>
 				</tr>
 			   <tr>
 			   		<td>Registration</td>
@@ -35,8 +35,23 @@
 				</tr>
 				<tr>
 					<td>Payments</td>
-					<td>Kwamena Odum </td>
-					<td>0244835721</td>
+					<td>Esther Kwofie</td>
+					<td>0260774349</td>
+				</tr>
+				<tr>
+					<td>Payments</td>
+					<td>Robin Huw Barnes</td>
+					<td>0543752472 </td>
+				</tr>
+				<tr>
+					<td>Payments</td>
+					<td>Thomas Olubumi</td>
+					<td>0265738884</td>
+				</tr>
+				<tr>
+					<td>Finance / Donations</td>
+					<td>Kukua Pratt</td>
+					<td>0244574675</td>
 				</tr>
 		    </tbody>
 	    </table>
