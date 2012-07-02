@@ -11,10 +11,11 @@
 				<li>
 					<div class='question'>When is the deadline for registration?</div>
 					<div class='answer'>Deadline for registration is 10th June 2012. 
-						Registration is only complete upon payment and failure to make payment 
-						before the registration deadline will result in a forfeiture of registrant’s place at camp. 
-						To avoid this situation, campers are required to inform registration officers beforehand of 
-						their inability to meet the deadline.
+						Deadline for registration is Friday, 10th August 2012. 
+						Registration is only complete upon payment and failure to make payment before the
+						registration deadline will result in a forfeiture of registrant’s place at camp.
+						To avoid this situation, campers are required to inform registration officers beforehand of their inability to meet
+						the deadline. 
 					</div>
 				</li>
 				<li>
@@ -44,18 +45,11 @@
 					<div class='question'>Can I receive a refund after having made payment?</div>
 					<div class='answer'>Camp fees once paid are not refundable.</div>
 				</li>
-				<li>
-					<div class='question'>Are there transportation arrangements for campers who will be coming to camp at the weekend?</div>
-					<div class='answer'>There are transportation arrangements for campers who will be coming to camp on Friday evening however 
-						anyone who intends to take advantage of this arrangement is required to register their 
-						interest with <b>Sipho Twum on 0244233994  </b> .
-					</div>
-				</li>
-				<li>
+					<li>
 					<div class='question'>Can I attend camp even if I haven’t made payment?</div>
 					<div class='answer'> Campers who for one reason or other cannot make payments before the deadline are required to inform the 
 						following camp officers <b> Andrew Amegatcher 0267666975,  Anthony Dzixose-Davor 024422669, Kwamena Odum 0244835721</b> 
-						latest by the close of day on the 10th of June 2012. They will however be required to make payments latest by 1st July 2012.
+						latest by the close of day on the 10th of August 2012. They will however be required to make payments latest by 1st July 2012.
 						 <br />
 						 Registrants who fail to make payment arrangements with the listed camp officers will be considered to have redrawn their application.
 					</div>
