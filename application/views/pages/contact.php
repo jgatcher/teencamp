@@ -17,6 +17,11 @@
 					<td>Naa Tso Otu-Boateng</td>
 					<td>0242379350</td>
 				</tr>
+				<tr>
+					<td>Asst. Head</td>
+					<td>Rosie Ampah</td>
+					<td>0244063748</td>
+				</tr>
 			   <tr>
 			   		<td>Registration</td>
 					<td>Andrew Amegatcher</td>
@@ -28,11 +33,6 @@
 					<td>0244226692</td>
 				</tr>
 				
-				<tr>
-					<td>Transport</td>
-					<td>Sipho Twum</td>
-					<td>0244233994</td>
-				</tr>
 				<tr>
 					<td>Payments</td>
 					<td>Esther Kwofie</td>
