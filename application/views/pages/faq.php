@@ -43,6 +43,7 @@
 					<div class='answer'> Campers who for one reason or other cannot make payments before the deadline are required to inform the following 
 					camp officers, <b>Kukua Pratt 0244574675, Anthony Davor 0244226692, Andrew Amegatcher 0267666975 </b> 
 					latest by the close of 	day on the Friday, 10th of August, 2012. 
+					<br/>Registrants who fail to make payment arrangements with the listed camp officers will be considered to have redrawn their application. 
 
 					</div>
 				</li>
