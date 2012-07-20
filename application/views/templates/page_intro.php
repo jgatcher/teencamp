@@ -16,6 +16,7 @@
               <li class=""><a href="<?php echo base_url(); ?>">Home</a></li>
               <li class=""><a  href="<?php echo base_url(); ?>index.php/about">About Teen Camp</a></li>
               <li class=""><a  href="<?php echo base_url(); ?>index.php/faq">FAQ's</a></li>
+              <li class=""><a  href="<?php echo base_url(); ?>index.php/rules">Camp Rules</a></li>
               <li class=""><a href="<?php echo base_url(); ?>index.php/contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
