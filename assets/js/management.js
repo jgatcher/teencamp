@@ -22,14 +22,13 @@
 		    title: 'Registered Campers',
 		    store: Ext.data.StoreManager.lookup('campersStore'),
 		    columns: [
-		        { header: 'First Name',  dataIndex: 'firstName' ,width : 80},
-		        { header: 'Last Name',  dataIndex: 'lastName' ,width : 80},
-		        { header: 'Phone', dataIndex: 'phoneNumber' ,width : 80},
+		        { header: 'First Name',  dataIndex: 'firstName' ,width : 90},
+		        { header: 'Last Name',  dataIndex: 'lastName' ,width : 90},
+		        { header: 'Phone', dataIndex: 'phoneNumber' ,width : 90},
 		        { header : 'PMT Sts', dataIndex : 'paymentStatus', renderer : paymentRenderer,width : 55},
-		        { header: 'Role', dataIndex: 'role',width : 50 },
-		        { header: 'Reg Date', dataIndex: 'date_registered' },
-		        { header: 'Arrival Day', dataIndex: 'arrival_day',width : 70 },
-		        { header: 'Church', dataIndex: 'church.name' ,width : 55}
+		        { header: 'Role', dataIndex: 'role',width : 70 },
+		        { header: 'Reg Date', dataIndex: 'date_registered' , flex : 1},
+		        { header: 'Church', dataIndex: 'church.name' ,width : 70}
 		    ],
 		    height: 600,
 		    width: 599,
@@ -54,6 +53,16 @@
 		        {"value":"Not Paid", "name":"Not Paid"},
 		        {"value":"Paid", "name":"Paid"}
 		    ]
+		});
+
+		var rolesStore = Ext.create('Ext.data.Store',{
+			fields : ['value', 'name'],
+			data : [
+				{value : 'camper' ,name : 'Camper'},
+				{value : 'committee' ,name : 'Committee'},
+				{value : 'prayer warrior' ,name : 'Prayer Warrior'},
+				{value : 'supervisors' ,name : 'Supervisors'}
+			]
 		});
 
 		
@@ -110,7 +119,7 @@
 		    title: 'Manage Campers Payment',
 		    bodyPadding: 5,
 		    width: 300,
-		    url: 'management/markCamperAsPaid',
+		    url: 'management/updateCamper',
 		    layout: 'anchor',
 		    defaults: {
 		        anchor: '100%'
@@ -128,16 +137,30 @@
 				    editable : false,
 				    name : 'paymentStatus',
 			    },
+
 			    {
 			        fieldLabel: 'First Name',
 			        name: 'firstName',
+			        readOnly : true,
 			        allowBlank: false,
 			        editable : false,
 			    },{
 			        fieldLabel: 'Last Name',
+			        readOnly : true,
 			        name: 'lastName',
 			        allowBlank: false,
 			        editable : false,
+			    },
+			    {
+			    	xtype: 'combo',
+		    	    fieldLabel: 'Role at Camp',
+				    store: rolesStore,
+				    queryMode: 'local',
+				    displayField: 'name',
+				    valueField: 'value',
+				    allowBlank: false,
+				    editable : false,
+				    name : 'role',
 			    },
 			    {
 			  		xtype : 'hiddenfield',

@@ -115,7 +115,7 @@
 			return $this->prepData( $data);
 		}
 
-		public function markCamperAsPaid(){
+		public function updateCamper(){
 			$this->load->library('mongo_db');
 			$this->load->helper('url');
 			$myPost = $this->input->post();
@@ -126,7 +126,9 @@
 					"payment" => array(
 						"status" => $myPost["paymentStatus"],
 						"date_of_payment" => date("Y-m-d H:i:s")	
-			));
+					),
+					'role' => $myPost["role"]
+			);
 
 			try{
 				
@@ -141,18 +143,19 @@
 				echo json_encode($response);
 				exit;
 			}catch (MongoConnectionException $e) {
-				//print_r($e);
-
+				
 				$response = array(
 					"success" => false,
-					"msg" => "something went wrong. Please try again"
+					"msg" => "something went wrong. Please try again",
+					'debug_message' => $e->getMessage()
 					);
 				echo json_encode($response);
 				exit;
 			}catch (MongoException  $e) {
 				$response = array(
 					"success" => false,
-					"msg" => "something went wrong. Please try again"
+					"msg" => "something went wrong. Please try again",
+					'debug_message' => $e->getMessage()
 					);
 				echo json_encode($response);
 				exit;

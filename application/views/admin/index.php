@@ -37,7 +37,7 @@
 		<?php echo $this->session->flashdata('error'); ?>
 		
 		<?php echo form_open('admin/login', $attributes_login); ?>
-		<label>Email:</label>
+		<label>Username:</label>
 		<p>
 			<input type='text' name='username_log' id='username_log' class='span3'>
 		</p>
