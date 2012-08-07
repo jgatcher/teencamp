@@ -283,7 +283,7 @@
 				<label>Role At Camp </label>
 				<p>
 					<select name='role'>
-						<option value='camper'>Camper</option>
+						<option value='Camper'>Camper</option>
 						<option value='committee'>Committee</option>
 						<option value='prayer warrior'>Prayer Warrior</option>
 						<option value='supervisors'>Supervisors</option>

@@ -50,7 +50,7 @@
 						<input type='password' name='password_log' id='password_log' class='span3'>
 					</p>
 					<input type='submit' value='Login' class='btn btn-primary' id='loginBtn'>
-					<a  class='btn btn-success form_links' id='click_signup' href="<?php echo base_url() ?>"> Sign up  First.
+					<a  class='form_links' id='click_signup' href="<?php echo base_url() ?>"> Sign up  First.
 					</a> 
 					<?php echo form_close(); ?>
 					<br /> <br /> <br /> <br /> 
