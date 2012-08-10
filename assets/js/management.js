@@ -22,6 +22,7 @@
 		    title: 'Registered Campers',
 		    store: Ext.data.StoreManager.lookup('campersStore'),
 		    columns: [
+		    	{ xtype: 'rownumberer'},
 		        { header: 'First Name',  dataIndex: 'firstName' ,width : 90},
 		        { header: 'Last Name',  dataIndex: 'lastName' ,width : 90},
 		        { header: 'Phone', dataIndex: 'phoneNumber' ,width : 90},
