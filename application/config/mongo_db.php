@@ -9,7 +9,7 @@
 // $config['mongo_persist_key'] = 'ci_mongo_persist';
 
 
- // $config['mongo_host'] = 'ds033877.mongolab.com:33877/teencamp_dev';
+ // $config['mongo_host'] = 'ds033828.mongolab.com:33828/teencamp13_dev';
  // $config['mongo_port'] = '';
  // $config['mongo_db'] = 'teencamp_dev';
  // $config['mongo_user'] = 'arcyf';
