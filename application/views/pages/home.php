@@ -1,4 +1,3 @@
-
 	<div class='custom'>
 		<div class='instructions'>
 			<h2>Register for Teen Camp in just 3 simple steps.</h2>
