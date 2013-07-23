@@ -24,18 +24,15 @@
 				</p>
 				<br>
 				<p>
-					<h4>Teen Camp 2012</h4>
-					The theme for this year’s camp is “Soldiers for Christ” – Holy, Steady, Battle-Ready! The theme 
-					verse is from 2 Timothy 2:3-4. 
-					The purpose of this year’s camp is to impress essential facets of the Christian faith to teenagers, 
-					through allegorical reference to elements of military life: recruitment, mission, battle gear, advancement, 
-					communication lines and war injuries. 
-					We hope to motivate campers to view their salvation as enrolment in God’s army; and embark on their faith as a 
-					lifelong mission. 
+					<h4>Teen Camp 2013</h4>
+					This year, Teen Camp is from the 4th to 8th of September, with the theme ,Love Unlimited: Experience the Father’s Love'. 
+					It is based on 1 John 3:1 and Ephesians 2:4-6.					The purpose of this year’s camp is to enable 
+					the teenager understand the depth of the Father's great and immeasurable love lavished on us which the world does not know because it did not know him . We hope to motivate campers to experience the fathers love in its immeasurable depth in their life.
+
 				</p>
 
 				<p>
-					If you are between the ages of 11 and 18, enroll at this year’s teen camp and join the Soldiers for Christ.
+					If you are between the ages of 11 and 18, enroll at this year’s teen camp and join us Experience the Father’s Love.  
 				</p>
 			</div>
 		</div>		
