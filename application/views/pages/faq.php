@@ -41,7 +41,7 @@
 					<li>
 					<div class='question'>Can I attend camp even if I haven’t made payment?</div>
 					<div class='answer'> Campers who for one reason or other cannot make payments before the deadline are required to inform the following 
-					camp officers, <b>Edem Aperwokin 0242112111, Baffour 0272262233, Aaron Anim 0262920697 </b> 
+					camp officers, <b>Edem Apewokin 0242112111, Baafour 0272262233, Aaron Anim 0262920697 </b> 
 					latest by the close of 	day on the Monday, 2nd of September, 2013. 
 					<br/>Registrants who fail to make payment arrangements with the listed camp officers will be considered to have redrawn their application. 
 
