@@ -12,11 +12,11 @@
 		    </thead>
 		    <tbody>
 		    		<tr>
-					<td>Baffour Otu-Boateng </td>
+					<td>Baafour Otu-Boateng </td>
 					<td>0272 262 233</td>
 				</tr>
 				<tr>
-					<td>Edem Aperwokin</td>
+					<td>Edem Apewokin</td>
 					<td>0242 112 111</td>
 				</tr>
 				<tr>
