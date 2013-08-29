@@ -84,8 +84,8 @@
 					I ........................................................................................
 					 consent that my Son / Daughter/ Ward 
 					..........................................................................................
-					 can attend Teen Camp 2012 being held at 
-					Abokobi Presbyterian Women's Centre from the  13th to 17th august 2012. 
+					 can attend Teen Camp 2013 being held at 
+					Abokobi Presbyterian Women's Centre from the  4th to 8th September 2013. 
 				</p>
 				<p>
 					Signed ............................................................
