@@ -91,7 +91,7 @@
 					Signed ............................................................
 				</p>
 				<p>
-					If your child is under medication, possess allegies and any other kind of medical condition, kindly indicate along with instructions  <br>
+					If your child is under medication, possess allergies and any other kind of medical condition, kindly indicate along with instructions  <br>
 					............................................................................................................................................................................<br>............................................................................................................................................................................
 					............................................................................................................................................................................<br>............................................................................................................................................................................
 					............................................................................................................................................................................<br>............................................................................................................................................................................
@@ -139,11 +139,11 @@
 			</ol>	
 			<br>
 			<p>
-				Reporting  time is 7:00am and departure from Accra Ridge Church and Manet on Monday 13th of August, 2012 is 9:00am PROMPT. 
-				Campers will be returning from Abokobi to Accra Ridge Church and Manet on Friday, 17th of August, 2012 at 4:00pm.
+				Reporting  time is 7:00am and departure from Accra Ridge Church and Manet on Wednesday 4th of September, 2013 is 9:00am PROMPT. 
+				Campers will be returning from Abokobi to Accra Ridge Church and Manet on Sunday, 8th of August, 2013 at 4:00pm.
 			</p>
 			<p>
-				RSVP: Naa Tsoo 0242379350, Rosie 0244063748, Anthony 0244226692, Gabriel 024445419
+				RSVP Baafour 0272 262 233 Edem  0242 112 111 Aaron 0262 920 697
 
 			</p>
 		</div>		
