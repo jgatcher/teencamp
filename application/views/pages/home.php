@@ -25,7 +25,7 @@
 
 						<div id='signup_div'>
 							<div class='close_reg'>
-								<span>REGISTERATION</span>
+								<span>REGISTRATION</span>
 								<br>
 								<span> CLOSED</span>
 					
